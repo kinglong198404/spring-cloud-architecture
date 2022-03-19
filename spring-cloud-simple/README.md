@@ -4,8 +4,8 @@
 
 ## 端口分配
 eureka-server 8761-8762  
-config-server 8888  
-api-gateway  9301  
-security-uaa 9701  
+config-server 8888
 provider-xxx  8061-8069  
 consumer-xxx   8091-8099  
+zuul-gateway  9301  
+security-uaa 9701  
