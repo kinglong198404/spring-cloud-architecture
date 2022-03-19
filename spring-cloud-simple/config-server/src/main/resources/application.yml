@@ -6,3 +6,8 @@ spring:
     name: config-server
   profiles:
     active: native
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://localhost:8761/eureka
