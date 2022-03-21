@@ -4,17 +4,6 @@ server:
 spring:
   application:
     name: data
-  main:
-    allow-bean-definition-overriding: true
-  http:
-    encoding:
-      enabled: true
-      charset: utf-8
-      force: true
-  jackson:
-    time-zone: GMT+8
-    serialization:
-      write-dates-as-timestamps: true
 
 eureka:
   instance:
