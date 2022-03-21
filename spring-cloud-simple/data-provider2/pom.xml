@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>data-provider</artifactId>
+    <artifactId>data-provider2</artifactId>
 
 
     <dependencies>
@@ -89,7 +89,7 @@
     </dependencies>
 
     <build>
-        <finalName>data-provider</finalName>
+        <finalName>data-provider2</finalName>
         <plugins>
             <!--打包MainClass-->
             <plugin>

@@ -1,9 +1,9 @@
 server:
-  port: 8061
+  port: 8062
 
 spring:
   application:
-    name: data
+    name: data2
   main:
     allow-bean-definition-overriding: true
   http:
@@ -18,6 +18,6 @@ spring:
 
 eureka:
   instance:
-    instance-id: data-8061
+    instance-id: data-8062
     prefer-ip-address: true
 

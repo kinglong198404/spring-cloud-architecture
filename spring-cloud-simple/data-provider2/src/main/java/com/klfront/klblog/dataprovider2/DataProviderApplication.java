@@ -1,4 +1,4 @@
-package com.klfront.klblog.dataprovider;
+package com.klfront.klblog.dataprovider2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
