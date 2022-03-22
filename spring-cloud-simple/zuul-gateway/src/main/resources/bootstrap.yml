@@ -9,16 +9,13 @@ spring:
   profiles: dev
   cloud:
     config:
-      name: base,datasource
+      name: base
       uri: http://localhost:8888
 
 ---
 spring:
-  profiles: prod
+  profiles: beta
   cloud:
     config:
-      name: base,datasource
+      name: base
       uri: http://localhost:8888
-
-
-

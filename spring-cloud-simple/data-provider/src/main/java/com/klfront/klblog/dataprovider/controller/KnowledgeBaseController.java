@@ -8,7 +8,7 @@ import javax.annotation.Resource;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/knowledge")
+@RequestMapping("/knowledgeBase")
 public class KnowledgeBaseController {
     @Resource
     private KnowledgeBaseService knowledgeBaseService;

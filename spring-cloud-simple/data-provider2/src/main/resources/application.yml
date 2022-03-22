@@ -1,12 +1,12 @@
 server:
-  port: 8062
+  port: 8071
 
 spring:
   application:
-    name: data2
+    name: data-provider2
 
 eureka:
   instance:
-    instance-id: data-8062
+    instance-id: data-provider2-8071
     prefer-ip-address: true
 

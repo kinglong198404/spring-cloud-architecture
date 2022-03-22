@@ -3,10 +3,10 @@ server:
 
 spring:
   application:
-    name: data
+    name: data-provider
 
 eureka:
   instance:
-    instance-id: data-8061
+    instance-id: data-provider-8061
     prefer-ip-address: true
 
