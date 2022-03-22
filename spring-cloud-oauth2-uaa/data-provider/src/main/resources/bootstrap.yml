@@ -1,0 +1,24 @@
+#bootstrap.yml优先级高于application.yml,该文件中没有的配置，仍旧从application.yml读取
+spring:
+  profiles:
+    active:
+      - dev
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      name: base,datasource
+      uri: http://localhost:8888
+
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      name: base,datasource
+      uri: http://localhost:8888
+
+
+

@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
+spring:
+  profiles: dev
+eureka:
+  profiles: dev		#开发环境
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      #defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/ #如果eureka有多点部署，可以这样配置
+---
+spring:
+  profiles: prod
+eureka:
+  profiles: prod   #生产环境
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://www.klfront.com:8761/eureka/
+
+
+
+

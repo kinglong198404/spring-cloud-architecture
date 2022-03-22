@@ -1,0 +1,31 @@
+server:
+  port: 8091
+  
+spring:
+   application:
+    name: data-consumer
+  
+feign: 
+  hystrix: 
+    enabled: true
+
+DATA-PROVIDER:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+ribbon:
+  ReadTimeout: 10000  
+  ConnectTimeout: 10000 
+  
+hystrix:
+  command: 
+      default:
+        execution:
+          isolation:
+            thread:
+              timeoutInMilliseconds: 10000
+
+eureka:
+  instance:
+    instance-id: data-consumer-8091
+    prefer-ip-address: true

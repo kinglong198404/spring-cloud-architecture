@@ -1,0 +1,12 @@
+server:
+  port: 8061
+
+spring:
+  application:
+    name: data-provider
+
+eureka:
+  instance:
+    instance-id: data-provider-8061
+    prefer-ip-address: true
+

@@ -1,0 +1,19 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-server
+  profiles:
+    active: native
+
+  cloud:
+    config:
+      server:
+        #如下是本地文件配置
+        native:
+          search-locations: classpath:/ #配置文件存放的目录
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://localhost:8761/eureka
