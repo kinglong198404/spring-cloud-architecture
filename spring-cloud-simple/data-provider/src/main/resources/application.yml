@@ -7,6 +7,6 @@ spring:
 
 eureka:
   instance:
-    instance-id: data-provider-8061
+    instance-id: ${spring.application.name}:${random.value}
     prefer-ip-address: true
 

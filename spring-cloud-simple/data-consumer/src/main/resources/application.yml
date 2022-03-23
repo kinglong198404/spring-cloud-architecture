@@ -11,8 +11,14 @@ feign:
 
 DATA-PROVIDER:
   ribbon:
-    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
-    
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule #轮询
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #随机
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule #权重
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.BestAvailableRule #最小连接数
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RetryRule #重试
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule    可用敏感性策略：AvailabilityFilteringRule，先过滤掉非健康的服务实例，然后再选择连接数较小的服务实例
+#    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.ZoneAvoidanceRule #区域敏感策略
+
 ribbon:
   ReadTimeout: 10000  
   ConnectTimeout: 10000 
