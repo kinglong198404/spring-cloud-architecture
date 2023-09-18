@@ -9,3 +9,5 @@ provider-xxx  8061-8069
 consumer-xxx   8091-8099  
 zuul-gateway  9201  
 security-uaa 9701  
+
+准备完善security-uaa
