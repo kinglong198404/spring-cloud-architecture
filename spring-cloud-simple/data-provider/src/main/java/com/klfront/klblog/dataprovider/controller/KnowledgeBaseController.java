@@ -25,7 +25,11 @@ public class KnowledgeBaseController {
 
     @GetMapping("/get/{id}")
     public KnowledgeBase get(@PathVariable Long id){
-        return knowledgeBaseService.selectByPrimaryKey(id);
+//        KnowledgeBase res =new KnowledgeBase();
+//        res.setId(id);
+//        return res;
+        KnowledgeBase res = knowledgeBaseService.selectByPrimaryKey(id);
+        return res;
     }
 
     @GetMapping("/list")

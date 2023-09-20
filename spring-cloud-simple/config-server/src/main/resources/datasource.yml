@@ -7,14 +7,15 @@ spring:
   profiles: dev
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
-    driver-class-name: com.mysql.cj.jdbc.Driver               # mysql驱动包
+    #   driver-class-name: com.mysql.cj.jdbc.Driver                # mysql驱动包
+    driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://www.klfront.com:3306/klcms?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
-    username: kinglong
-    password: Kl@186509
+    username: xxxx
+    password: xxxx
     dbcp2:
       min-idle: 5                                           # 数据库连接池的最小维持连接数
       initial-size: 5                                       # 初始化连接数
-      max-total: 5                                          # 最大连接数
+      max-total: 20                                         # 最大连接数
       max-wait-millis: 86400                                # 默认值200太小 等待连接获取的最大超时时间
     
 mybatis:
@@ -29,7 +30,8 @@ spring:
  profiles: prod
  datasource:
    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
-   driver-class-name: com.mysql.cj.jdbc.Driver                # mysql驱动包
+#   driver-class-name: com.mysql.cj.jdbc.Driver                # mysql驱动包
+   driver-class-name: com.mysql.jdbc.Driver
    url: jdbc:mysql://www.klfront.com:3306/klcms?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
    username: xxxx
    password: xxxx

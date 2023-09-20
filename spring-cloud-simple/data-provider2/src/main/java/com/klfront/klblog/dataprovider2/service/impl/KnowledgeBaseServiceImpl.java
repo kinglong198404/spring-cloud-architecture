@@ -18,7 +18,8 @@ public class KnowledgeBaseServiceImpl implements KnowledgeBaseService{
 
     @Override
     public KnowledgeBase selectByPrimaryKey(Long id) {
-        return knowledgeBaseMapper.selectByPrimaryKey(id);
+        KnowledgeBase res = knowledgeBaseMapper.selectByPrimaryKey(id);
+        return res;
     }
 
     @Override
