@@ -9,7 +9,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     #   driver-class-name: com.mysql.cj.jdbc.Driver                # mysql驱动包
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://www.klfront.com:3306/klcms?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://www.klfront.com:3306/klblog?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
     username: xxxx
     password: xxxx
     dbcp2:
@@ -32,7 +32,7 @@ spring:
    type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
 #   driver-class-name: com.mysql.cj.jdbc.Driver                # mysql驱动包
    driver-class-name: com.mysql.jdbc.Driver
-   url: jdbc:mysql://www.klfront.com:3306/klcms?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
+   url: jdbc:mysql://www.klfront.com:3306/klblog?useUnicode=true&characterEncoding=utf8&allowPublicKeyRetrieval=true
    username: xxxx
    password: xxxx
    dbcp2: 
