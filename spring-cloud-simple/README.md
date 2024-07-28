@@ -1,4 +1,4 @@
-﻿# spring-cloud-simple示例项目 
+﻿# spring-cloud-simple
 
 ## 简易的spring cloud微服务框架  
 
@@ -10,4 +10,6 @@ consumer-xxx   8091-8099
 zuul-gateway  9201  
 security-uaa 9701  
 
-准备完善security-uaa
+项目框架构建过程说明：
+http://blog.klfront.com/item/293.html
+http://blog.klfront.com/item/294.html

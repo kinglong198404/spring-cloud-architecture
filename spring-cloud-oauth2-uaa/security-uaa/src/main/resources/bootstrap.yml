@@ -1,0 +1,22 @@
+spring:
+  profiles:
+    active:
+      - dev
+
+---
+spring:
+  profiles: dev
+  cloud:
+    config:
+      name: base
+      uri: http://localhost:8888
+
+
+---
+spring:
+  profiles: prod
+  cloud:
+    config:
+      name: base
+      uri: http://localhost:8888
+
