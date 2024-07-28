@@ -1,3 +1,11 @@
 .idea
 target
 /spring-cloud-simple/*.log
+/spring-cloud-simple/common/*.iml
+/spring-cloud-simple/config-server/*.iml
+/spring-cloud-simple/config-server/src/main/resources/*.yml-dev
+/spring-cloud-simple/data-consumer/*.iml
+/spring-cloud-simple/data-provider/*.iml
+/spring-cloud-simple/eureka-server/*.iml
+/spring-cloud-simple/*.iml
+/spring-cloud-simple/zuul-gateway/*.iml
