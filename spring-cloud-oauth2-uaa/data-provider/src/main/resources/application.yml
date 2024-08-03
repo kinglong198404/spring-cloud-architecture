@@ -6,17 +6,6 @@ server:
     protocol-header: x-forwarded-proto
 
 #mybatis通过config-server进行配置
-
-logging:
-  level:
-    root: info
-  file:
-    name: security-uaa.log
-    max-size: 10MB
-    max-history: 30
-  pattern:
-    rolling-file-name: ${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz
-
 spring:
   application:
     name: data-provider
@@ -28,6 +17,16 @@ spring:
       enabled: true
       charset: utf-8
       force: true
+
+logging:
+  level:
+    root: info
+  file:
+    name: security-uaa.log
+    max-size: 10MB
+    max-history: 30
+  pattern:
+    rolling-file-name: ${LOG_FILE}.%d{yyyy-MM-dd}.%i.gz
 
 eureka:
   instance:

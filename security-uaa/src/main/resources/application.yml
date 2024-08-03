@@ -40,7 +40,8 @@ spring:
   profiles: dev
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://www.klfront.com:3306/klblog?useUnicode=true&characterEncoding=utf8
+    # url: jdbc:mysql://www.klfront.com:3306/klblog?useUnicode=true&characterEncoding=utf8 #SQLNonTransientConnectionException
+    url: jdbc:mysql://www.klfront.com:3306/klblog?serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true&useUnicode=true&characterEncoding=utf8
     username: kinglong
     password: xxxxxx
     dbcp2:

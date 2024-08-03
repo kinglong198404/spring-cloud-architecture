@@ -15,20 +15,20 @@ import org.springframework.security.oauth2.provider.token.TokenStore;
  * @version 1.0
  **/
 @Configuration
-@EnableResourceServer
+@EnableResourceServer  // 该注解标记该服务是一个资源服务
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
-
 
     public static final String RESOURCE_ID = "res1";
 
     @Autowired
     TokenStore tokenStore;
 
+    // 这里使用本地验证令牌方式
     @Override
     public void configure(ResourceServerSecurityConfigurer resources) {
         resources.resourceId(RESOURCE_ID)//资源 id
-                .tokenStore(tokenStore)
-//               .tokenServices(tokenService())//验证令牌的服务
+                .tokenStore(tokenStore)  //本地验证令牌
+                //.tokenServices(tokenService())//远程服务验证令牌方式
                 .stateless(true);
     }
 
@@ -38,7 +38,8 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
         http
                 .authorizeRequests()
                 //.antMatchers("/**").access("#oauth2.hasScope('ROLE_ADMIN')") // 角色限制
-                .antMatchers("/**").access("#oauth2.hasScope('all')") // 无角色限制
+                .antMatchers("/user/**").access("#oauth2.hasScope('ALL')") // 拥有所有角色
+                .antMatchers("/**").access("#oauth2.hasScope('ROLE_API')") // 拥有API角色
                 .and().csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }

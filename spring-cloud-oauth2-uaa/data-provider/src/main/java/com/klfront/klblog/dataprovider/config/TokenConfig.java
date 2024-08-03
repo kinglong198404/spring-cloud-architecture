@@ -9,8 +9,8 @@ import org.springframework.security.oauth2.provider.token.store.JwtTokenStore;
 @Configuration
 public class TokenConfig {
 
-    // 对称秘钥，资源服务器使用该秘钥来验证
-    private String SIGNING_KEY = "uaa123";
+    // 对称秘钥，授权服务、资源服务器都使用该秘钥来验证
+    private String SIGNING_KEY = "uaa_kl";
 
     @Bean
     public TokenStore tokenStore() {
