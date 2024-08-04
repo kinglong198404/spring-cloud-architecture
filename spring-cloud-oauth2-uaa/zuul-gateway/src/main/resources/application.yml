@@ -4,6 +4,8 @@ server:
 spring:
   application:
     name: zuul-gateway
+  main:
+    allow-bean-definition-overriding: true
   servlet:
     multipart:
       enabled: true
@@ -17,9 +19,9 @@ zuul:
   routes:
     DATA-PROVIDER: /data-provider/**
     DATA-CONSUMER: /data-consumer/**
-
   ignored-patterns: /*-service/**
   sensitive-headers: Cookie,Set-Cookie
+  add-host-header: true
 
 ribbon:
   ReadTimeout: 50000
