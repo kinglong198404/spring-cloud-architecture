@@ -39,7 +39,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 .authorizeRequests()
                 //.antMatchers("/**").access("#oauth2.hasScope('ROLE_ADMIN')") // 角色限制
                 .antMatchers("/user/**").access("#oauth2.hasScope('ALL')") // 拥有所有角色
-                .antMatchers("/**").access("#oauth2.hasScope('ROLE_API')") // 拥有API角色
+//                .antMatchers("/**").access("#oauth2.hasScope('ROLE_API')") // 拥有API角色
                 .and().csrf().disable()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
     }

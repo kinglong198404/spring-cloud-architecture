@@ -55,7 +55,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://www.klfront.com:3306/klblog?useUnicode=true&characterEncoding=utf8
     username: kinglong
-    password: xxxxxx
+    password: Kl@186509
     dbcp2:
       min-idle: 5
       initial-size: 5

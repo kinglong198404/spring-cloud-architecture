@@ -34,17 +34,17 @@ public class GlobalResponse<T> implements Serializable {
         return res;
     }
 
-    public static <T> GlobalResponse<T> loginFail(String errorMsg){
+    public static <T> GlobalResponse<T> loginFail(){
         GlobalResponse<T> res =  new GlobalResponse(null);
         res.setCode(LOGIN_FAIL_CODE);
-        res.setMessage(errorMsg);
+        res.setMessage(LOGIN_FAIL_MESSAGE);
         return res;
     }
 
-    public static <T> GlobalResponse<T> authFail(String errorMsg){
+    public static <T> GlobalResponse<T> authFail(){
         GlobalResponse<T> res =  new GlobalResponse(null);
         res.setCode(AUTH_FAIL_CODE);
-        res.setMessage(errorMsg);
+        res.setMessage(AUTH_FAIL_MESSAGE);
         return res;
     }
 
@@ -55,6 +55,12 @@ public class GlobalResponse<T> implements Serializable {
         return res;
     }
 
+    public static <T> GlobalResponse<T> error(String errorMsg,Integer errorCode){
+        GlobalResponse<T> res =  new GlobalResponse(null);
+        res.setCode(errorCode);
+        res.setMessage(errorMsg);
+        return res;
+    }
     public static <T> GlobalResponse<T> error(String errorMsg){
         GlobalResponse<T> res =  new GlobalResponse(null);
         res.setCode(COMMON_ERROR);
