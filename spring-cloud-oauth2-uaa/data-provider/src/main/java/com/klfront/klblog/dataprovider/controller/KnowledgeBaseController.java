@@ -27,7 +27,7 @@ public class KnowledgeBaseController {
     }
 
     @GetMapping("/get/{id}")
-    @PreAuthorize("hasAuthority('knowledge_view')") //拥有knowledge_view权限方可访问
+//    @PreAuthorize("hasAuthority('knowledge_view')") //拥有knowledge_view权限方可访问
     public KnowledgeBase get(@PathVariable Long id){
 //        KnowledgeBase res =new KnowledgeBase();
 //        res.setId(id);

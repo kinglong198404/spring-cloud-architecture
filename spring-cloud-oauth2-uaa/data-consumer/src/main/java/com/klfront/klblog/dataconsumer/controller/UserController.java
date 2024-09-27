@@ -24,4 +24,14 @@ public class UserController {
         UserDto userDTO = (UserDto) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         return userDTO.getUsername()+" 访问用户资源" + System.currentTimeMillis();
     }
+
+    @GetMapping(value = "/test")
+    public String test(){
+        return "测试1";
+    }
+
+    @GetMapping(value = "/test2")
+    public String test2(){
+        return "测试2";
+    }
 }
