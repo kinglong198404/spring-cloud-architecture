@@ -67,6 +67,12 @@
             <version>5.2.0.RELEASE</version>
             <scope>compile</scope>
         </dependency>
+
+        <!--集成Aop  http://blog.klfront.com/item/247.html-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-aop</artifactId>
+        </dependency>
     </dependencies>
 
     <build>

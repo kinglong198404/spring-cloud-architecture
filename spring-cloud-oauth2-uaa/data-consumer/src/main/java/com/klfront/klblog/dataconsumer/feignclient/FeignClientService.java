@@ -43,5 +43,5 @@ public interface FeignClientService {
 	 * @return
 	 */
 	@GetMapping("/knowledgeBase/get/{id}")
-	public KnowledgeBase getKnowledgeById(@PathVariable("id") Long id);
+	public Object getKnowledgeById(@PathVariable("id") Long id);
 }

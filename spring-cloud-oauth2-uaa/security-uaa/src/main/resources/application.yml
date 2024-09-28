@@ -55,14 +55,14 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://www.klfront.com:3306/klblog?useUnicode=true&characterEncoding=utf8
     username: kinglong
-    password: xxxxxx
+    password: Kl@186509
     dbcp2:
       min-idle: 5
       initial-size: 5
       max-total: 5
       max-wait-millis: 2000
 server:
-  port: 9999
+  port: 9998
 eureka:
   instance:
     instance-id: ${spring.application.name}:${random.value}

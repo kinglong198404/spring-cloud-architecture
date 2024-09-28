@@ -28,7 +28,8 @@ public class FeignClientServiceFallbackFactory implements FallbackFactory<com.kl
 			}
 
 			@Override
-			public KnowledgeBase getKnowledgeById(Long id) {
+			public Object getKnowledgeById(Long id) {
+				System.out.println(cause.getMessage());
 				return null;
 			}
 		};

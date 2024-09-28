@@ -5,6 +5,7 @@ import com.klfront.klblog.dataconsumer.feignclient.FeignClientService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.HashMap;
 
 @RestController
 @RequestMapping("/knowledgeBase")
@@ -23,7 +24,13 @@ public class KnowledgeBaseConsumerController {
     }
 
     @GetMapping("/get/{id}")
-    public KnowledgeBase get(@PathVariable Long id){
-        return service.getKnowledgeById(id);
+    public Object get(@PathVariable Long id){
+        // {
+        //  "code": 200,
+        //  "message": null,
+        //  "data": { }
+        // }
+        Object res = service.getKnowledgeById(id);
+        return res;
     }
 }

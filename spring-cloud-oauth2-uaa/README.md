@@ -6,3 +6,11 @@
 项目构建过程说明：
 http://blog.klfront.com/item/290.html
 
+
+报错：
+<error_description>Cannot convert access token to JSON</error_description>
+<error>invalid_token</error>
+
+uaa_security的 String SIGNING_KEY = "uaa123";
+zuul_gateway的 String SIGNING_KEY = "uaa_kl";
+
